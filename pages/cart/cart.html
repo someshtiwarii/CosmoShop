@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/e70e2d0aa4.js" crossorigin="anonymous"></script>
+    <link rel="icon" type="image" href="/assets/favicon.ico">
+    <link rel="stylesheet" type="text/css" href="https://fake-ui-library.netlify.app/styles.css" />
+    <link rel="stylesheet" href="cart.css">
+
+    <title>Cart | CosmoShop</title>
+</head>
+
+<body>
+    <navbar>
+        <div class="navbar">
+            <div class="navbar-logo">
+                <a href="/index.html"><img src="/assets/cosmoshop_logo.svg"></a>
+            </div>
+            <div class="search-container">
+                <i class="fas fa-search search-icon"></i>
+                <input type="text" id="search" name="search" placeholder="Search" class="search-input">
+            </div>
+            <div class="cta">
+                <button class="btn btn-primary"><a href="/index.html">Logout</a></button>
+
+                <div class="badge navbar-icon">
+                    <a href="../wishlist/wishlist.html"><i class="fas fa-heart fa-2x"></i></a>
+                    <div class="notification notification-badge">
+                        <span>2</span>
+                    </div>
+                </div>
+
+                <div class="badge navbar-icon">
+                    <a href="../cart/cart.html"><i class="fas fa-shopping-cart fa-2x"></i></a>
+                    <div class="notification notification-badge">
+                        <span>2</span>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+
+    </navbar>
+
+    <div class="cart-section">
+        <main>
+            <div class="cart-items">
+
+                <div class="cart-heading">
+                    <h1>My Cart</h1>
+                </div>
+
+                <div class="cart-item">
+
+                    <div class="card card-horizontal">
+                        <div class="left-part">
+
+                            <img src="/assets/suit-img.jpg" alt="product photo" class="card-img-horizontal" />
+                        </div>
+
+                        <div class="right-part">
+                            <div class="card-body">
+                                <div class="card-info">Regular Spacesuit (White)</div>
+                                <div class="price-info">
+                                    <div class="new-price">
+                                        ₹44999
+                                    </div>
+                                    <div class="old-price">
+                                        100000
+                                    </div>
+                                </div>
+                                <div class="discount-info">
+                                    Flat <strong>45%</strong> OFF
+                                </div>
+                                <div class="quantity">
+                                    <p>Quantity : </p>
+
+                                    <button class="qty-btn">
+                                        <i class="fas fa-minus fab-1"></i>
+                                    </button>
+
+                                    <input type="number" step="1" min="1" max="" name="quantity" value="1" title="Qty"
+                                        class="input-text-qty">
+
+                                    <button class="qty-btn">
+                                        <i class="fas fa-plus fab-1"></i>
+                                    </button>
+
+                                </div>
+                            </div>
+                            <div class="card-btn">
+                                <button class="btn btn-primary">Remove from cart</button>
+                                <button class="btn btn-primary-outline">Move to Wishlist</button>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="cart-checkout">
+                    <div class="price-details-heading">
+                        <h3>Price Details</h3>
+                    </div>
+
+                    <div class="price-details">
+                        <div class="price-detail">
+                            <p>Price (1 item)</p>
+                            <p>₹44999</p>
+                        </div>
+
+                        <div class="price-detail">
+                            <p>Discount</p>
+                            <p>-₹55001</p>
+                        </div>
+
+                        <div class="price-detail">
+                            <p>Delivery Charges</p>
+                            <p>₹1000</p>
+                        </div>
+
+                    </div>
+
+                    <div class="total-amount-heading price-detail">
+                        <h4>TOTAL AMOUNT</h4>
+                        <P>₹45999</P>
+                    </div>
+
+                    <div class="place-order">
+                        <p>You will save ₹55001 on this order</p>
+                        <button class="btn btn-primary">PLACE ORDER</button>
+                    </div>
+
+                </div>
+
+            </div>
+
+    </div>
+    </main>
+
+    </div>
+
+
+</body>
+
+</html>
