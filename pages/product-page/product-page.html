@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/e70e2d0aa4.js" crossorigin="anonymous"></script>
+    <link rel="icon" type="image" href="/assets/favicon.ico">
+    <link rel="stylesheet" type="text/css" href="https://fake-ui-library.netlify.app/styles.css" />
+    <link rel="stylesheet" href="product-page.css">
+
+    <title>Products | CosmoShop</title>
+</head>
+
+<body>
+    <navbar>
+        <div class="navbar">
+            <div class="navbar-logo">
+                <a href="/index.html"><img src="/assets/cosmoshop_logo.svg"></a>
+            </div>
+            <div class="search-container">
+                <i class="fas fa-search search-icon"></i>
+                <input type="text" id="search" name="search" placeholder="Search" class="search-input">
+            </div>
+            <div class="cta">
+                <button class="btn btn-primary"><a href="../login/login.html">Login</a></button>
+
+                <div class="badge navbar-icon">
+                    <a href="../wishlist/wishlist.html"><i class="fas fa-heart fa-2x"></i></a>
+                    <div class="notification notification-badge">
+                        <span>2</span>
+                    </div>
+                </div>
+
+                <div class="badge navbar-icon">
+                    <a href="../cart/cart.html"><i class="fas fa-shopping-cart fa-2x"></i></a>
+                    <div class="notification notification-badge">
+                        <span>2</span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </navbar>
+
+    <div class="main-section">
+        <aside>
+            <div class="left-tab filters-tab">
+                <h3>Filter</h3>
+                <button class="btn btn-link">Clear</button>
+            </div>
+
+            <div class="left-tab price-tab">
+                <h3>Price</h3>
+
+                <div class="price-range">
+                    <p>50</p>
+                    <p>100</p>
+                    <p>1000+</p>
+                </div>
+                <input type="range" min="1" max="100" value="50">
+            </div>
+
+            <div class="left-tab category-tab">
+                <h3>Category</h3>
+                <input type="checkbox" id="suit" name="suit" value="spacesuit">
+                <label for="suit">SpaceSuits</label><br>
+                <input type="checkbox" id="boot" name="boot" value="spaceboot">
+                <label for="boot">SpaceBoots</label><br>
+                <input type="checkbox" id="helmet" name="helmet" value="spacehelmet">
+                <label for="suit">SpaceHelmets</label><br>
+            </div>
+
+            <div class="left-tab rating-tab">
+                <h3>Rating</h3>
+
+                <input type="radio" id="fourstars" name="fourstars" value="fourstars">
+                <label for="fourstars">4 stars & above</label><br>
+
+                <input type="radio" id="threestars" name="threestars" value="threestars">
+                <label for="threestars">3 stars & above</label><br>
+
+                <input type="radio" id="twostars" name="twostars" value="twostars">
+                <label for="twostars">2 stars & above</label><br>
+
+                <input type="radio" id="onestars" name="onestars" value="onestars">
+                <label for="onestars">1 star & above</label><br>
+
+
+            </div>
+
+            <div class="left-tab sort-by-tab">
+                <h3>Sort by</h3>
+
+                <input type="radio" id="lowtohigh" name="lowtohigh" value="lowtohigh">
+                <label for="lowtohigh">Price - Low to High</label><br>
+
+                <input type="radio" id="hightolow" name="hightolow" value="hightolow">
+                <label for="hightolow">Price - High to Low</label><br>
+
+            </div>
+
+        </aside>
+
+        <main>
+            <div class="products">
+                <div class="product-card product-card-1">
+                    <div class="card">
+                        <div class="card-header">
+                            <img src="/assets/suit-img.jpg" alt="product photo" class="card-img" />
+                        </div>
+                        <div class="card-body">
+                            <div class="card-info">Regular Spacesuit (White)</div>
+                            <div class="price-info">
+                                <div class="new-price">
+                                    ₹44999
+                                </div>
+                                <div class="old-price">
+                                    100000
+                                </div>
+                            </div>
+                            <div class="discount-info">
+                                Flat <strong>45%</strong> OFF
+                            </div>
+                        </div>
+                        <div class="card-btn">
+                            <button class="btn btn-primary">Add to Cart</button>
+                            <button class="btn btn-primary-outline">Add to Wishlist</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card product-card-2">
+                    <div class="card">
+                        <div class="card-header">
+                            <img src="/assets/suit-img.jpg" alt="product photo" class="card-img" />
+                        </div>
+                        <div class="card-body">
+                            <div class="card-info">Regular Spacesuit (White)</div>
+                            <div class="price-info">
+                                <div class="new-price">
+                                    ₹44999
+                                </div>
+                                <div class="old-price">
+                                    100000
+                                </div>
+                            </div>
+                            <div class="discount-info">
+                                Flat <strong>45%</strong> OFF
+                            </div>
+                        </div>
+                        <div class="card-btn">
+                            <button class="btn btn-primary">Add to Cart</button>
+                            <button class="btn btn-primary-outline">Add to Wishlist</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card product-card-3">
+                    <div class="card">
+                        <div class="card-header">
+                            <img src="/assets/suit-img.jpg" alt="product photo" class="card-img" />
+                        </div>
+                        <div class="card-body">
+                            <div class="card-info">Regular Spacesuit (White)</div>
+                            <div class="price-info">
+                                <div class="new-price">
+                                    ₹44999
+                                </div>
+                                <div class="old-price">
+                                    100000
+                                </div>
+                            </div>
+                            <div class="discount-info">
+                                Flat <strong>45%</strong> OFF
+                            </div>
+                        </div>
+                        <div class="card-btn">
+                            <button class="btn btn-primary">Add to Cart</button>
+                            <button class="btn btn-primary-outline">Add to Wishlist</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card product-card-4">
+                    <div class="card">
+                        <div class="card-header">
+                            <img src="/assets/suit-img.jpg" alt="product photo" class="card-img" />
+                        </div>
+                        <div class="card-body">
+                            <div class="card-info">Regular Spacesuit (White)</div>
+                            <div class="price-info">
+                                <div class="new-price">
+                                    ₹44999
+                                </div>
+                                <div class="old-price">
+                                    100000
+                                </div>
+                            </div>
+                            <div class="discount-info">
+                                Flat <strong>45%</strong> OFF
+                            </div>
+                        </div>
+                        <div class="card-btn">
+                            <button class="btn btn-primary">Add to Cart</button>
+                            <button class="btn btn-primary-outline">Add to Wishlist</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card product-card-5">
+                    <div class="card">
+                        <div class="card-header">
+                            <img src="/assets/suit-img.jpg" alt="product photo" class="card-img" />
+                        </div>
+                        <div class="card-body">
+                            <div class="card-info">Regular Spacesuit (White)</div>
+                            <div class="price-info">
+                                <div class="new-price">
+                                    ₹44999
+                                </div>
+                                <div class="old-price">
+                                    100000
+                                </div>
+                            </div>
+                            <div class="discount-info">
+                                Flat <strong>45%</strong> OFF
+                            </div>
+                        </div>
+                        <div class="card-btn">
+                            <button class="btn btn-primary">Add to Cart</button>
+                            <button class="btn btn-primary-outline">Add to Wishlist</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </main>
+
+    </div>
+
+</body>
+
+</html>
