@@ -1,0 +1,26 @@
+@import url("/css/general.css");
+
+.wishlist-items {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(2, auto);
+    grid-gap: 1rem;
+    margin: 3rem 5rem 0 5rem;
+}
+
+.wishlist-heading {
+    grid-column: 1/-1;
+    text-align: center;
+}
+
+.wishlist-item {
+    box-shadow: 0px 3px 8px var(--grey);
+}
+
+.card-dismiss {
+    padding: 0.5rem;
+    background-color: white;
+    border-radius: 50%;
+    color: var(--neon-red);
+    opacity: 1;
+}
