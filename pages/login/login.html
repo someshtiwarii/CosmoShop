@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/e70e2d0aa4.js" crossorigin="anonymous"></script>
+    <link rel="icon" type="image" href="/assets/favicon.ico">
+    <link rel="stylesheet" type="text/css" href="https://fake-ui-library.netlify.app/styles.css" />
+    <link rel="stylesheet" href="login.css">
+
+    <title>CosmoShop</title>
+</head>
+
+<body>
+
+    <navbar>
+        <div class="navbar">
+            <div class="navbar-logo">
+                <a href="/index.html"><img src="/assets/cosmoshop_logo.svg"></a>
+            </div>
+            <div class="search-container">
+                <i class="fas fa-search search-icon"></i>
+                <input type="text" id="search" name="search" placeholder="Search" class="search-input">
+            </div>
+            <div class="cta">
+                <button class="btn btn-primary"><a href="./login.html">Login</a></button>
+
+                <div class="badge navbar-icon">
+                    <a href="../wishlist/wishlist.html"><i class="fas fa-heart fa-2x"></i></a>
+                    <div class="notification notification-badge">
+                        <span>2</span>
+                    </div>
+                </div>
+
+                <div class="badge navbar-icon">
+                    <a href="../cart/cart.html"><i class="fas fa-shopping-cart fa-2x"></i></a>
+                    <div class="notification notification-badge">
+                        <span>2</span>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+
+    </navbar>
+
+    <main>
+
+
+
+        <div class="login-section">
+
+            <div class="login-heading">
+                <h2>Login</h2>
+            </div>
+
+            <div class="login-input">
+
+                <div class="username-box">
+                    <label for="uname">Username:</label>
+                    <input required type="text" id="uname" class="uname" name="uname" placeholder="Enter username..">
+                    <div class="message">
+                        <p><i class="fas fa-exclamation-triangle"></i>enter correct username</p>
+                    </div>
+                </div>
+
+                <div class="password-box">
+                    <label for="password">Password:</label>
+                    <input required type="password" id="password" class="password" name="password"
+                        placeholder="********">
+                    <div class="message">
+                        <p><i class="fas fa-exclamation-triangle"></i>enter correct password</p>
+                    </div>
+                </div>
+
+                <div class="options-box">
+                    <div class="remember-option">
+                        <input type="checkbox">
+                        <p>Remember me</p>
+                    </div>
+
+                    <a href="#">Forgot your password?</a>
+                </div>
+
+                <button class="btn btn-primary">Login</button>
+
+            </div>
+
+            <div class="signup-link">
+                <a href="../signup/signup.html">
+                    <p>Create New Account</p>
+                </a>
+                <i class="fas fa-angle-right"></i>
+            </div>
+
+        </div>
+
+    </main>
+</body>
+
+</html>
