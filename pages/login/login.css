@@ -80,7 +80,7 @@ main {
 @media only screen and (max-width: 540px) {
 
     .login-section {
-        padding: 2rem 0rem;
+        padding: 2rem 0;
     }
 
 }
