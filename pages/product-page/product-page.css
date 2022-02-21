@@ -23,8 +23,9 @@
 
 .products {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(2, auto);
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+    grid-template-rows: auto auto;
     grid-gap: 1rem;
     margin: 1rem;
 }
@@ -48,4 +49,83 @@
 
 .left-tab h3 {
     margin-bottom: 0.5rem;
+}
+
+
+@media only screen and (max-width: 860px) {
+
+    .navbar {
+        justify-content: space-around;
+    }
+
+    .main-section {
+        grid-template-columns: 10rem 1fr;
+    }
+
+    .left-tab {
+        margin: 0 0.5rem 0.25rem 0.5rem;
+        padding: 0.25rem;
+        font-size: 80%;
+    }
+
+    .products {
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 0.25rem;
+        margin: 0.25rem;
+    }
+
+    .btn {
+        font-size: 100%;
+    }
+
+}
+
+@media only screen and (max-width: 540px) {
+
+    .products {
+        grid-template-columns: 1fr;
+        grid-gap: 0.25rem;
+        margin: 0.25rem;
+    }
+
+    .product-card {
+        padding: 0.5rem;
+    }
+
+}
+
+@media only screen and (max-width: 390px) {
+
+    .main-section {
+        grid-template-columns: 40vw auto;
+    }
+
+    .main-section>aside {
+        padding-top: 0.5rem;
+    }
+
+    .left-tab {
+        margin: 0;
+        padding: 0.1rem;
+        font-size: 70%;
+    }
+
+    .product-card {
+        padding: 0;
+    }
+
+    .card {
+        font-size: 90%;
+    }
+
+    .card-body,
+    .card-btn {
+        padding: 0.25rem 0.25rem 0;
+    }
+
+    .products {
+        grid-gap: 1rem;
+        margin-top: 0.5rem;
+    }
+
 }
